@@ -1,0 +1,21 @@
+/* Error: $color2: #072d69 !important is not a color.
+ *     ,
+ * 161 |   @return mix(black, $color, $weight);
+ *     |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *     '
+ *   scss/bootstrap/scss/_functions.scss 161:11  shade-color()
+ *   scss/bootstrap/scss/_functions.scss 166:27  shift-color()
+ *   scss/bootstrap/scss/_variables.scss 291:43  @import
+ *   scss/bootstrap/scss/bootstrap.scss 11:9     @import
+ *   scss/bootstrap.scss 25:9                    root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: $color2: #072d69 !important is not a color.\a     \2577 \a 161 \2502    @return mix(black, $color, $weight);\a     \2502            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   scss/bootstrap/scss/_functions.scss 161:11  shade-color()\a   scss/bootstrap/scss/_functions.scss 166:27  shift-color()\a   scss/bootstrap/scss/_variables.scss 291:43  @import\a   scss/bootstrap/scss/bootstrap.scss 11:9     @import\a   scss/bootstrap.scss 25:9                    root stylesheet";
+}
