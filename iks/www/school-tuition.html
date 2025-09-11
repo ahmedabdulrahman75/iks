@@ -1,7 +1,26 @@
-{% extends 'templates/iks_base.html'%}
-
-{% block content %}
+{% extends 'templates/iks_base.html'%} {% block content %}
 <div class="container-fluid">
-	<embed src="/assets/iks/assets/tuition_fees.pdf" width="100%" style="height: 75vh;" />
+	<div class="mt-5 d-flex flex-column justify-content-center align-items-center">
+		<div class="mt-3">
+			<img src="/assets/iks/assets/tuition_fees/1.png" alt="fees" class="mx-auto w-100" />
+		</div>
+		<div class="mt-3">
+			<img src="/assets/iks/assets/tuition_fees/2.png" alt="fees" class="mx-auto w-100" />
+		</div>
+		<div class="mt-3">
+			<img src="/assets/iks/assets/tuition_fees/3.png" alt="fees" class="mx-auto w-100" />
+		</div>
+		<div class="mt-3">
+			<img src="/assets/iks/assets/tuition_fees/4.png" alt="fees" class="mx-auto w-100" />
+		</div>
+		<div class="mt-3">
+			<a
+				href="/assets/iks/assets/tuition_fees/tuition_fees.pdf"
+				target="_blank"
+				class="btn btn-primary"
+				>Download</a
+			>
+		</div>
+	</div>
 </div>
 {% endblock %}

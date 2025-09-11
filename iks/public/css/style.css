@@ -90,6 +90,11 @@
   background-color: #072d69;
   border-color: #13418a;
 }
+.btn.btn-primary:hover {
+  color: #072d69;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
 
 .btn-square {
   width: 38px;
@@ -643,7 +648,7 @@ h6,
 
 .service-section .item a {
   width: 100%;
-  
+
 }
 .service-section .item-content {
   display: flex;
