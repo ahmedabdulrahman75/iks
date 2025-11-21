@@ -7,7 +7,9 @@
   --third: #0e4aa8;
   --forth: #ce3838;
 }
-
+.container-xxl {
+	max-width: 100vw !important;
+}
 .text-light {
   color: var(--light) !important;
 }
