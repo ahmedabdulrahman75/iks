@@ -19,7 +19,7 @@
 								type="file"
 								id="fileInput"
 								name="file"
-								accept=".pdf,.jpg,.png,.docx"
+								accept=".pdf"
 								aria-describedby="fileHelp"
 								required
 							/>
@@ -44,10 +44,46 @@
 			</div>
 		</div>
 	</div>
+	<!-- Toast Container -->
+	<div class="position-fixed bottom-1 end-0 p-3" style="z-index: 9999">
+		<!-- Success Toast -->
+		<div
+			id="successToast"
+			class="toast align-items-center bg-success text-white border-0 mb-2"
+			role="alert"
+			data-bs-delay="3000"
+		>
+			<div class="d-flex">
+				<div class="toast-body">CV uploaded successfully!</div>
+				<button
+					type="button"
+					class="btn-close btn-close-white me-2 m-auto"
+					data-bs-dismiss="toast"
+				></button>
+			</div>
+		</div>
+		<div
+			id="errorToast"
+			class="toast align-items-center bg-danger text-white border-0"
+			role="alert"
+			data-bs-autohide="true"
+			data-bs-delay="3000"
+		>
+			<div class="d-flex">
+				<div class="toast-body">Something went wrong. Try again.</div>
+				<button
+					type="button"
+					class="btn-close btn-close-white me-2 m-auto"
+					data-bs-dismiss="toast"
+				></button>
+			</div>
+		</div>
+	</div>
 </main>
 <script>
 	const fileInput = document.getElementById("fileInput");
 	const selected = document.getElementById("selectedFileName");
+	const form = document.getElementById("uploadForm");
 
 	fileInput.addEventListener("change", () => {
 		const file = fileInput.files[0];
@@ -59,7 +95,7 @@
 	});
 
 	// Optional: basic client-side validation to ensure a file is chosen
-	document.getElementById("uploadForm").addEventListener("submit", async (e) => {
+	form.addEventListener("submit", async (e) => {
 		e.preventDefault();
 		const file = fileInput.files[0];
 		const allowedTypes = ["application/pdf"];
@@ -72,15 +108,24 @@
 			selected.textContent = "Please choose a right file type.";
 			selected.style.color = "crimson";
 		} else {
-			console.log("hello");
 			const formData = new FormData();
 			formData.append("cv", file);
 			const res = await fetch("/api/method/iks.api.job_applications.apply_for_job", {
 				method: "POST",
-				body: formData
+				credentials: "omit",
+				body: formData,
 			});
 			const data = await res.json();
-			console.log("Upload result:", data.message);
+			if (data.message.success) {
+				const toastEl = document.getElementById("successToast");
+				const toast = new bootstrap.Toast(toastEl);
+				toast.show();
+				form.reset();
+			} else {
+				const toastEl = document.getElementById("errorToast");
+				const toast = new bootstrap.Toast(toastEl);
+				toast.show();
+			}
 		}
 	});
 </script>
