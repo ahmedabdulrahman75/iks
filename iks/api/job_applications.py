@@ -21,5 +21,6 @@ def apply_for_job():
 		job_application.save(ignore_permissions=True)
 		return {"success": True}
 
-	except:
+	except Exception as e:
+		frappe.log_error(e)
 		return {"success": False}
