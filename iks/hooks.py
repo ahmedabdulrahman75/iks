@@ -242,3 +242,7 @@ app_license = "gpl-3.0"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+fixtures = [
+	{"doctype": "Role", "filters": {"name": "IKS User"}},
+]
