@@ -204,9 +204,9 @@
 				uniform_fees.innerHTML += `
 					<tr>
 						<td class="text-white" style="background-color: ${r.color};">${r.grade_level}</td>
-						<td>${r.annual_tuition_fees}</td>
-						<td>${r.school_books}</td>
-						<td>${r.uniform}</td>
+						<td>${r.annual_tuition_fees || '-'}</td>
+						<td>${r.school_books || '-'}</td>
+						<td>${r.uniform || '-'}</td>
 					</tr>
 				`;
 			}
