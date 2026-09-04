@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-04 12:31:22.190995",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "from",
+  "column_break_pglx",
+  "to",
+  "section_break_pjgi",
+  "tuition_fees",
+  "section_break_fjbf",
+  "entrance_exam_fee",
+  "administrative_fee",
+  "sibling_discount",
+  "column_break_zfxh",
+  "interview_fee",
+  "reservation_fee",
+  "miscellaneous_fee",
+  "school_uniform_section",
+  "school_uniform",
+  "transportation_section",
+  "one_way_fees",
+  "column_break_ckqb",
+  "two_way_fees",
+  "section_break_ptyi",
+  "fees_pdf"
+ ],
+ "fields": [
+  {
+   "fieldname": "tuition_fees",
+   "fieldtype": "Table",
+   "label": "Tuition Fees",
+   "options": "Tuition Fees"
+  },
+  {
+   "fieldname": "section_break_fjbf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "entrance_exam_fee",
+   "fieldtype": "Data",
+   "label": "Entrance Exam Fee"
+  },
+  {
+   "fieldname": "administrative_fee",
+   "fieldtype": "Data",
+   "label": "Administrative Fee"
+  },
+  {
+   "fieldname": "column_break_zfxh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interview_fee",
+   "fieldtype": "Data",
+   "label": "Interview Fee"
+  },
+  {
+   "fieldname": "miscellaneous_fee",
+   "fieldtype": "Data",
+   "label": "Miscellaneous Fee"
+  },
+  {
+   "fieldname": "sibling_discount",
+   "fieldtype": "Data",
+   "label": "Sibling discount"
+  },
+  {
+   "fieldname": "school_uniform_section",
+   "fieldtype": "Section Break",
+   "label": "School Uniform"
+  },
+  {
+   "fieldname": "school_uniform",
+   "fieldtype": "Table",
+   "label": "School Uniform",
+   "options": "Uniform Fees"
+  },
+  {
+   "fieldname": "transportation_section",
+   "fieldtype": "Section Break",
+   "label": "Transportation"
+  },
+  {
+   "fieldname": "one_way_fees",
+   "fieldtype": "Data",
+   "label": "One Way Fees"
+  },
+  {
+   "fieldname": "column_break_ckqb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "two_way_fees",
+   "fieldtype": "Data",
+   "label": "Two Way Fees"
+  },
+  {
+   "fieldname": "section_break_ptyi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fees_pdf",
+   "fieldtype": "Attach",
+   "label": "Fees PDF"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Data",
+   "label": "From"
+  },
+  {
+   "fieldname": "column_break_pglx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Data",
+   "label": "To"
+  },
+  {
+   "fieldname": "section_break_pjgi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reservation_fee",
+   "fieldtype": "Data",
+   "label": "Reservation Fee"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-09-04 14:15:00.200116",
+ "modified_by": "Administrator",
+ "module": "Iks",
+ "name": "School Tuition",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

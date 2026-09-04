@@ -1,4 +1,5 @@
 {
+ "app": "iks",
  "charts": [],
  "content": "[{\"id\":\"C-MNioH2Q0\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">IKS</span>\",\"col\":12}},{\"id\":\"cFK-sHyAT7\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Applications\",\"col\":4}},{\"id\":\"pdGxZbyoJy\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"ic-5zB-ImC\",\"type\":\"card\",\"data\":{\"card_name\":\"IKS Jobs Applications\",\"col\":4}}]",
  "creation": "2025-12-02 12:00:02.427224",
@@ -27,7 +28,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "IKS Jobs Applications",
-   "link_count": 1,
+   "link_count": 2,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -41,9 +42,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "School Tution",
+   "link_count": 0,
+   "link_to": "School Tuition",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-12-02 12:20:27.609644",
+ "modified": "2026-09-04 12:42:57.344430",
  "modified_by": "Administrator",
  "module": "Iks",
  "name": "IKS",
@@ -60,5 +71,6 @@
  "roles": [],
  "sequence_id": 28.0,
  "shortcuts": [],
- "title": "IKS"
+ "title": "IKS",
+ "type": "Workspace"
 }

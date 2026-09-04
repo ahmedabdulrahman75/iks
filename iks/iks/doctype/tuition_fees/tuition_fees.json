@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-04 12:25:47.774435",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "grade_level",
+  "annual_tuition_fees",
+  "school_books",
+  "uniform",
+  "color"
+ ],
+ "fields": [
+  {
+   "fieldname": "grade_level",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Grade Level"
+  },
+  {
+   "fieldname": "annual_tuition_fees",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Annual Tuition Fees "
+  },
+  {
+   "fieldname": "school_books",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "School Books"
+  },
+  {
+   "fieldname": "uniform",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Uniform"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "in_standard_filter": 1,
+   "label": "Color"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-04 12:37:35.818557",
+ "modified_by": "Administrator",
+ "module": "Iks",
+ "name": "Tuition Fees",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

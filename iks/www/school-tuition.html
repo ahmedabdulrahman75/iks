@@ -1,26 +1,255 @@
 {% extends 'templates/iks_base.html'%} {% block content %}
 <div class="container-fluid">
-	<div class="mt-5 d-flex flex-column justify-content-center align-items-center">
-		<div class="mt-3">
-			<img src="/assets/iks/assets/tuition_fees/1.png" alt="fees" class="mx-auto w-100" />
+	<div id="fees" class="mt-5 d-flex flex-column justify-content-center align-items-center">
+		<div class="mt-3 w-100">
+			<section class="tuition-fees">
+				<div class="title">1- Tuition Fees:</div>
+
+				<table>
+					<thead>
+						<tr>
+							<th colspan="4" class="table-title" id="tution-title">
+								IKS Tuition Fees
+							</th>
+						</tr>
+
+						<tr>
+							<th class="grade tution-fees-head">Grade Level</th>
+							<th class="tuition tution-fees-head">
+								<div class="wrap text-white">
+									Annual Tuition<br />
+									Fees
+								</div>
+							</th>
+							<th class="books tution-fees-head">School Books</th>
+							<th class="uniform tution-fees-head">Uniform</th>
+						</tr>
+					</thead>
+
+					<tbody id="uniform-fees"></tbody>
+				</table>
+			</section>
 		</div>
-		<div class="mt-3">
-			<img src="/assets/iks/assets/tuition_fees/2.png" alt="fees" class="mx-auto w-100" />
+		<div class="mt-3 w-100">
+			<section class="important-notes">
+				<h2>Important Notes:</h2>
+				<ul>
+					<li>
+						<strong><u>Entrance Exam Fee</u></strong>
+						for New Grades 1 – 6 students is
+						<strong id="entrance-exam-fee">500 SAR</strong> per child.
+						<br />
+						(Nonrefundable) (The exam content: English, Math, Arabic).
+					</li>
+
+					<li>
+						<strong><u>Interview Fee</u></strong>
+						for New KG students is <strong id="interview-fee">300 SAR</strong> per
+						child. (Nonrefundable).
+					</li>
+
+					<li>
+						<strong><u>Administrative Fee</u></strong>
+						for New KG - Grade 6 students is
+						<strong id="administrative-fee">1,500 SAR</strong> that will
+						<strong>NOT be deducted.</strong>
+						(Nonrefundable)
+					</li>
+
+					<li>
+						<strong><u>Reservation Fees:</u></strong>
+						For current students is <strong id="reservation-fee">2,500 SAR</strong> and
+						will be deducted from the tuition fee and will be
+						<strong>non-refundable</strong> if the student withdraws from the school.
+					</li>
+
+					<li>
+						<strong><u>Siblings’ discount:</u></strong>
+						<strong id="sibling-discount">5%</strong> discount on the tuition fee will
+						be applied to younger siblings of the oldest child according to the terms
+						and condition.
+					</li>
+
+					<li>
+						<strong><u>Miscellaneous Fee:</u></strong>
+						<strong id="miscellaneous-fee">1,500 SAR</strong> (includes art supplies,
+						annual school photo, stationary pack, e-school platform, school trip, end
+						of year party)
+						<strong><u>VAT Included.</u></strong>
+					</li>
+
+					<li><strong>Terms and Conditions</strong> should be applied.</li>
+				</ul>
+			</section>
 		</div>
-		<div class="mt-3">
-			<img src="/assets/iks/assets/tuition_fees/3.png" alt="fees" class="mx-auto w-100" />
+
+		<!-- Tuition Fees Imagesn -->
+		<div class="mt-3 w-100">
+			<section class="fee-uniform">
+				<h2>2- <u>School Uniform:</u></h2>
+
+				<div class="content-row">
+					<table class="uniform-table">
+						<caption>
+							IKS Uniform Fees
+						</caption>
+
+						<thead>
+							<tr>
+								<th>Items</th>
+								<th>Level</th>
+								<th>Price</th>
+							</tr>
+						</thead>
+
+						<tbody id="school_uniform"></tbody>
+					</table>
+
+					<div class="notes">
+						<h3>Important Notes:</h3>
+						<ul>
+							<li>VAT is included.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Transportation -->
+			<section class="fee-uniform transportation">
+				<h2>3- <u>Transportation:</u></h2>
+
+				<div class="content-row">
+					<table class="transport-table">
+						<caption>
+							IKS Transportation Fees
+						</caption>
+
+						<thead>
+							<tr>
+								<th>One Way Fees</th>
+								<th>Two Way Fees</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td id="one-way-fees">3,000 SAR</td>
+								<td id="two-way-fees">5,000 SAR</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="notes">
+						<h3>Important Notes:</h3>
+						<ul>
+							<li>
+								Transportation fees must be paid with the 1<sup>st</sup>
+								installment fees.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 		</div>
-		<div class="mt-3">
-			<img src="/assets/iks/assets/tuition_fees/4.png" alt="fees" class="mx-auto w-100" />
+		<div class="mt-3 w-100">
+			<section class="registration-section">
+				<h2>4- <u>Registration Requirements:</u></h2>
+
+				<ul>
+					<li>Original report cards</li>
+					<li>Student Application Form</li>
+					<li>Valid ID or Iqama copy</li>
+					<li>Passport copy of student and guardians</li>
+					<li>Student Birth Certificate</li>
+					<li>Administrative Expenses for new students (1,500 SAR)</li>
+					<li>Entrance Exam Fee for New Grades 1 to 6 students (500 SAR)</li>
+					<li>Interview Fee for New KG students (300 SAR)</li>
+					<li>Financial Clearance from previous school</li>
+					<li>3 Passport-Sized Photos</li>
+					<li>Medical Form</li>
+					<li>Vaccination Reports</li>
+				</ul>
+			</section>
 		</div>
 		<div class="mt-3">
 			<a
 				href="/assets/iks/assets/tuition_fees/tuition_fees.pdf"
 				target="_blank"
-				class="btn btn-primary"
+				class="btn btn-primary text-white download"
+				id="fees_pdf"
 				>Download</a
 			>
 		</div>
 	</div>
 </div>
+<script>
+	const requestOptions = {
+		method: "GET",
+		redirect: "follow",
+	};
+
+	fetch(
+		"http://127.0.0.1:8000/api/method/iks.api.school_tuition.get_school_tuition",
+		requestOptions,
+	)
+		.then((response) => response.json())
+		.then((result) => {
+			resp = result.message.data;
+			console.log(resp);
+			let tution_title = document.getElementById("tution-title");
+			tution_title.innerHTML = `IKS Tuition Fees ${resp.from}-${resp.to}`;
+
+			let uniform_fees = document.getElementById("uniform-fees");
+			for (let r of resp.tuition_fees) {
+				uniform_fees.innerHTML += `
+					<tr>
+						<td class="text-white" style="background-color: ${r.color};">${r.grade_level}</td>
+						<td>${r.annual_tuition_fees}</td>
+						<td>${r.school_books}</td>
+						<td>${r.uniform}</td>
+					</tr>
+				`;
+			}
+
+			let entrance_exam_fee = document.getElementById("entrance-exam-fee");
+			entrance_exam_fee.innerHTML = `${resp.entrance_exam_fee} SAR`;
+
+			let interview_fee = document.getElementById("interview-fee");
+			interview_fee.innerHTML = `${resp.interview_fee} SAR`;
+
+			let administrative_fee = document.getElementById("administrative-fee");
+			administrative_fee.innerHTML = `${resp.administrative_fee} SAR`;
+
+			let reservation_fee = document.getElementById("reservation-fee");
+			reservation_fee.innerHTML = `${resp.reservation_fee} SAR`;
+
+			let sibling_discount = document.getElementById("sibling-discount");
+			sibling_discount.innerHTML = `${resp.sibling_discount}%`;
+
+			let miscellaneous_fee = document.getElementById("miscellaneous-fee");
+			miscellaneous_fee.innerHTML = `${resp.miscellaneous_fee} SAR`;
+
+			let school_uniform = document.getElementById("school_uniform");
+			for (let r of resp.school_uniform) {
+				school_uniform.innerHTML += `
+			 	<tr>
+				<td>${r.items}</td>
+				<td>${r.level}</td>
+				<td>${r.price}</td>
+				</tr>
+				`;
+			}
+
+			let one_way_fees = document.getElementById("one-way-fees");
+			one_way_fees.innerHTML = `${resp.one_way_fees} SAR`;
+
+			let two_way_fees = document.getElementById("two-way-fees");
+			two_way_fees.innerHTML = `${resp.two_way_fees} SAR`;
+
+			let fees_pdf = document.getElementById("fees_pdf");
+			fees_pdf.href = `${resp.fees_pdf}`;
+
+		})
+		.catch((error) => console.error(error));
+</script>
 {% endblock %}
